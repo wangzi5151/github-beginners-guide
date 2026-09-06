@@ -1,6 +1,16 @@
-# GitHub 新手完全指南
+# China-use-github
 
-> 从零开始，全面掌握 GitHub 的使用方法。无论你是程序员、设计师还是任何需要协作的人，这份指南都能帮助你快速上手 GitHub。
+> 中国开发者 GitHub 使用完全指南 - 从零开始全面掌握 GitHub，包含国内加速方案和中文资源
+
+---
+
+## 为什么选择这个指南？
+
+- 针对中国开发者优化，包含网络加速方案
+- 全中文文档，零基础友好
+- 50+ 篇详细教程，8 个实战练习
+- 涵盖 Git 基础到 GitHub 高级功能
+- 持续更新，紧跟 GitHub 最新特性
 
 ---
 
@@ -50,12 +60,23 @@
 - [GitHub Mobile 介绍](docs/K-github-mobile.md)
 - [GitHub Sponsors 介绍](docs/L-github-sponsors.md)
 - [GitHub Marketplace](docs/N-marketplace.md)
+- [Git 可视化工具介绍](docs/U-git-clients.md)
 
 ### 第六部分：安全与最佳实践
 - [GitHub 安全最佳实践](docs/O-security-best-practices.md)
 - [GitHub API 使用指南](docs/P-github-api.md)
 
-### 第七部分：实战练习
+### 第七部分：中国开发者专区
+- [GitHub 国内加速指南](docs/Q-china-acceleration.md)
+- [国内 Git 托管平台](docs/R-china-platforms.md)
+- [中国开发者常见问题](docs/S-china-faq.md)
+- [中文 Git/GitHub 术语对照表](docs/T-chinese-glossary.md)
+
+### 第八部分：实战案例
+- [项目实战案例](docs/V-practical-examples.md)
+- [GitHub 教育资源](docs/W-education.md)
+
+### 第九部分：实战练习
 - [练习 1：创建你的第一个仓库](exercises/exercise-1-create-repo.md)
 - [练习 2：分支与合并练习](exercises/exercise-2-branch-merge.md)
 - [练习 3：Pull Request 工作流](exercises/exercise-3-pull-request.md)
@@ -79,9 +100,15 @@
 
 ## 快速开始
 
-### 新手入门
+### 中国开发者快速入门
 
-如果你是完全的新手，建议按顺序阅读第一部分和第二部分：
+1. [安装 Git（国内镜像）](docs/02-install-git.md#国内镜像)
+2. [配置 GitHub 加速](docs/Q-china-acceleration.md)
+3. [注册 GitHub 账号](docs/03-signup-github.md)
+4. [配置 SSH 密钥](docs/04-ssh-keys.md)
+5. 开始 [实战练习](exercises/exercise-1-create-repo.md)
+
+### 国际用户快速入门
 
 1. 了解 [什么是 GitHub](docs/01-what-is-github.md)
 2. [安装与配置 Git](docs/02-install-git.md)
@@ -89,21 +116,20 @@
 4. [配置 SSH 密钥](docs/04-ssh-keys.md)
 5. 开始 [实战练习](exercises/exercise-1-create-repo.md)
 
-### 有基础的开发者
-
-如果你已经了解 Git 基础，可以直接跳到：
-- [GitHub 核心功能](docs/14-create-repo.md)（第三部分）
-- [GitHub 生态系统](docs/H-github-copilot.md)（第五部分）
-- [安全与最佳实践](docs/O-security-best-practices.md)（第六部分）
-
 ### 快速克隆本仓库
 
 ```bash
-# 克隆本仓库到本地
-git clone https://github.com/wangzi5151/github-beginners-guide.git
+# 使用 HTTPS（推荐国内用户）
+git clone https://github.com/wangzi5151/China-use-github.git
 
-# 进入仓库目录
-cd github-beginners-guide
+# 使用 SSH
+git clone git@github.com:wangzi5151/China-use-github.git
+
+# 使用 GitHub CLI
+gh repo clone wangzi5151/China-use-github
+
+# 国内加速克隆（如果上述方式较慢）
+git clone https://ghproxy.com/https://github.com/wangzi5151/China-use-github.git
 ```
 
 ---
@@ -118,8 +144,21 @@ cd github-beginners-guide
 | 第四部分 | 协作与进阶 | 进阶用户 |
 | 第五部分 | GitHub 生态系统 | 所有用户 |
 | 第六部分 | 安全与最佳实践 | 团队负责人 |
-| 第七部分 | 实战练习 | 所有用户 |
+| 第七部分 | 中国开发者专区 | 国内用户 |
+| 第八部分 | 实战案例 | 所有用户 |
+| 第九部分 | 实战练习 | 所有用户 |
 | 附录 | 速查表和参考 | 所有用户 |
+
+---
+
+## 统计
+
+| 类型 | 数量 |
+|------|------|
+| 教程文档 | 50+ 篇 |
+| 实战练习 | 8 个 |
+| 附录文档 | 8 篇 |
+| 总文件数 | 70+ 个 |
 
 ---
 
@@ -133,4 +172,8 @@ cd github-beginners-guide
 
 ## 反馈
 
-如果你有任何问题或建议，请在 [Issues](https://github.com/wangzi5151/github-beginners-guide/issues) 中提出。
+如果你有任何问题或建议，请在 [Issues](https://github.com/wangzi5151/China-use-github/issues) 中提出。
+
+## Star 历史
+
+如果这个项目对你有帮助，欢迎 Star 支持！
