@@ -1,4 +1,4 @@
-# China-use-github
+# Chinese Use GitHub Helper
 
 > 中国开发者 GitHub 使用完全指南 - 从零开始全面掌握 GitHub，包含国内加速方案和中文资源
 
@@ -120,16 +120,16 @@
 
 ```bash
 # 使用 HTTPS（推荐国内用户）
-git clone https://github.com/wangzi5151/China-use-github.git
+git clone https://github.com/wangzi5151/chinese-use-github-helper.git
 
 # 使用 SSH
-git clone git@github.com:wangzi5151/China-use-github.git
+git clone git@github.com:wangzi5151/chinese-use-github-helper.git
 
 # 使用 GitHub CLI
-gh repo clone wangzi5151/China-use-github
+gh repo clone wangzi5151/chinese-use-github-helper
 
 # 国内加速克隆（如果上述方式较慢）
-git clone https://ghproxy.com/https://github.com/wangzi5151/China-use-github.git
+git clone https://ghproxy.com/https://github.com/wangzi5151/chinese-use-github-helper.git
 ```
 
 ---
@@ -172,7 +172,7 @@ git clone https://ghproxy.com/https://github.com/wangzi5151/China-use-github.git
 
 ## 反馈
 
-如果你有任何问题或建议，请在 [Issues](https://github.com/wangzi5151/China-use-github/issues) 中提出。
+如果你有任何问题或建议，请在 [Issues](https://github.com/wangzi5151/chinese-use-github-helper/issues) 中提出。
 
 ## Star 历史
 
