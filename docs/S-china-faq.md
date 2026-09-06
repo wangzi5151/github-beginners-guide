@@ -249,7 +249,7 @@ gh pr create --title "New feature" --body "Description"
 
 如果以上没有解决你的问题，可以：
 
-1. 搜索 [GitHub Discussions](https://github.com/wangzi5151/China-use-github/discussions)
-2. 提交 [Issue](https://github.com/wangzi5151/China-use-github/issues)
+1. 搜索 [GitHub Discussions](https://github.com/wangzi5151/chinese-use-github-helper/discussions)
+2. 提交 [Issue](https://github.com/wangzi5151/chinese-use-github-helper/issues)
 3. 搜索 [Stack Overflow](https://stackoverflow.com/questions/tagged/git)
 4. 查看 [GitHub 文档](https://docs.github.com)

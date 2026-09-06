@@ -59,7 +59,7 @@ GitHub Marketplace 是一个平台，让你可以发现和使用各种工具来�
 |------|------|
 | GitHub Actions | GitHub 官方 CI/CD |
 | CircleCI | 持续集成服务 |
-| Travis CI | 持续集成服务 |
+| Buildkite | CI/CD 平台 |
 
 ### 代码质量
 

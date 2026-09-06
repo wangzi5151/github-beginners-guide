@@ -8,7 +8,7 @@
 
 如果发现错误或有改进建议：
 
-1. 搜索现有的 [Issues](https://github.com/wangzi5151/github-beginners-guide/issues)
+1. 搜索现有的 [Issues](https://github.com/wangzi5151/chinese-use-github-helper/issues)
 2. 如果没有找到，创建新的 Issue
 3. 使用清晰的标题描述问题
 4. 提供详细的复现步骤
@@ -115,4 +115,4 @@ Closes #42
 
 ## 问题？
 
-如果你有任何问题，请在 [Issues](https://github.com/wangzi5151/github-beginners-guide/issues) 中提出。
+如果你有任何问题，请在 [Issues](https://github.com/wangzi5151/chinese-use-github-helper/issues) 中提出。

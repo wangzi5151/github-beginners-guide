@@ -7,7 +7,7 @@
 | GitHub Docs | https://docs.github.com | 官方文档 |
 | Git 官网 | https://git-scm.com | Git 下载和文档 |
 | GitHub Skills | https://skills.github.com | 交互式学习 |
-| GitHub Learning Lab | https://lab.github.com | 实践教程 |
+| GitHub Learning Lab | https://docs.github.com/en/skills | 实践教程 |
 
 ## 交互式学习
 

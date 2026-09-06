@@ -8,57 +8,225 @@ Issue 是 GitHub 的问题追踪系统，用于：
 - 讨论问题
 - 跟踪任务
 
-## 创建 Issue
+## 创建 Issue（图文详解）
 
-### 网页创建
-1. 进入仓库 → **Issues** 标签
-2. 点击 **New issue**
-3. 填写标题和描述
-4. 点击 **Submit new issue**
+### 第 1 步：进入 Issues 页面
 
-### 使用模板
-很多仓库提供 Issue 模板：
-- Bug Report
-- Feature Request
-- Question
+1. 打开仓库页面
+2. 点击 **Issues** 标签
+3. 点击绿色的 **New issue** 按钮
 
-### 命令行创建
+```
+┌─────────────────────────────────────────────┐
+│  Issues                                      │
+│                                             │
+│  [New issue]  ← 点击这个按钮                 │
+│                                             │
+│  Filters: [Open ▼] [Labels ▼] [Assignee ▼] │
+│                                             │
+│  No issues found                             │
+└─────────────────────────────────────────────┘
+```
 
-```bash
-# 使用 GitHub CLI
-gh issue create --title "Bug: 首页加载失败" --body "描述问题..."
+### 第 2 步：填写 Issue 信息
+
+```
+┌─────────────────────────────────────────────┐
+│  New issue                                   │
+│                                             │
+│  Title: [Bug: 首页加载失败              ]     │
+│                                             │
+│  Leave a comment:                            │
+│  ┌─────────────────────────────────────┐    │
+│  │ ## 问题描述                         │    │
+│  │ 首页在某些情况下无法正常加载           │    │
+│  │                                     │    │
+│  │ ## 复现步骤                         │    │
+│  │ 1. 打开首页                         │    │
+│  │ 2. 点击登录按钮                      │    │
+│  │ 3. 页面显示空白                      │    │
+│  │                                     │    │
+│  │ ## 期望行为                         │    │
+│  │ 应该显示登录表单                     │    │
+│  │                                     │    │
+│  │ ## 环境信息                         │    │
+│  │ - OS: Windows 11                    │    │
+│  │ - Browser: Chrome 120               │    │
+│  └─────────────────────────────────────┘    │
+│                                             │
+│  ☑ Assignees: [选择负责人]                  │
+│  ☑ Labels: [bug] [help wanted]              │
+│  ☑ Milestone: [v1.0]                       │
+│                                             │
+│        [Submit new issue]                   │
+└─────────────────────────────────────────────┘
+```
+
+**填写说明：**
+
+| 字段 | 说明 | 建议 |
+|------|------|------|
+| **Title** | Issue 标题 | 简洁描述问题 |
+| **Comment** | 详细描述 | 提供复现步骤 |
+| **Assignees** | 负责人 | 选择处理此 Issue 的人 |
+| **Labels** | 标签 | 分类管理 |
+| **Milestone** | 里程碑 | 关联版本计划 |
+
+### 第 3 步：提交 Issue
+
+1. 填写完成后
+2. 点击绿色的 **Submit new issue** 按钮
+3. Issue 创建成功
+
+## 使用 Issue 模板
+
+很多仓库提供 Issue 模板，可以更快地创建标准 Issue：
+
+```
+┌─────────────────────────────────────────────┐
+│  Choose a template                           │
+│                                             │
+│  ┌─────────────┐  ┌─────────────┐          │
+│  │ 🐛 Bug     │  │ ✨ Feature  │          │
+│  │ Report      │  │ Request     │          │
+│  │             │  │             │          │
+│  │ [Use        │  │ [Use        │          │
+│  │  template]  │  │  template]  │          │
+│  └─────────────┘  └─────────────┘          │
+│                                             │
+│  ┌─────────────┐  ┌─────────────┐          │
+│  │ ❓ Question │  │ 📝 Docs     │          │
+│  │             │  │             │          │
+│  │ [Use        │  │ [Use        │          │
+│  │  template]  │  │  template]  │          │
+│  └─────────────┘  └─────────────┘          │
+└─────────────────────────────────────────────┘
 ```
 
 ## Issue 标签 (Labels)
 
-默认标签：
-- `bug`：bug 报告
-- `enhancement`：功能增强
-- `documentation`：文档
-- `good first issue`：适合新手
-- `help wanted`：需要帮助
-- `question`：问题
+### 默认标签
 
-自定义标签：
-1. 进入 **Issues** → **Labels**
+| 标签 | 颜色 | 说明 |
+|------|------|------|
+| `bug` | 红色 | Bug 报告 |
+| `enhancement` | 蓝色 | 功能增强 |
+| `documentation` | 浅蓝 | 文档相关 |
+| `good first issue` | 绿色 | 适合新手 |
+| `help wanted` | 绿色 | 需要帮助 |
+| `question` | 紫色 | 问题 |
+| `wontfix` | 灰色 | 不修复 |
+| `duplicate` | 灰色 | 重复 |
+
+### 添加标签到 Issue
+
+**方法一：创建时添加**
+1. 创建 Issue 时
+2. 点击 **Labels** 下拉框
+3. 选择或创建标签
+
+**方法二：创建后添加**
+1. 打开 Issue 页面
+2. 在右侧找到 **Labels**
+3. 点击齿轮图标
+4. 选择标签
+
+```
+┌─────────────────────────────────────┐
+│  Labels  ⚙️                          │
+│                                     │
+│  ☐ bug                              │
+│  ☑ enhancement  ← 选中这个          │
+│  ☐ documentation                    │
+│  ☐ good first issue                 │
+│                                     │
+│  Filter: [搜索标签...]              │
+│                                     │
+│  [New label]  ← 创建新标签          │
+└─────────────────────────────────────┘
+```
+
+### 创建自定义标签
+
+1. 在 Issues 页面点击 **Labels**
 2. 点击 **New label**
-3. 设置名称、颜色和描述
+3. 填写信息：
+   - **Label name**：标签名称
+   - **Description**：描述
+   - **Color**：颜色（点击选择）
+4. 点击 **Add label**
+
+```
+┌─────────────────────────────────────┐
+│  New label                           │
+│                                     │
+│  Label name: [priority: high   ]    │
+│                                     │
+│  Description: [高优先级问题      ]    │
+│                                     │
+│  Color: [🔴]  ← 点击选择颜色         │
+│                                     │
+│     [Add label]                     │
+└─────────────────────────────────────┘
+```
 
 ## 指派 (Assignees)
 
 将 Issue 分配给特定人员：
-1. 编辑 Issue
-2. 在右侧 **Assignees** 选择人员
+
+1. 打开 Issue 页面
+2. 在右侧找到 **Assignees**
+3. 点击 **Assign yourself** 或搜索添加
+
+```
+┌─────────────────────────────────────┐
+│  Assignees                           │
+│                                     │
+│  No one assigned                    │
+│                                     │
+│  [Assign yourself]  ← 分配给自己    │
+│  [Assign others]   ← 分配给他人     │
+└─────────────────────────────────────┘
+```
 
 ## 里程碑 (Milestones)
 
 将 Issue 归入版本计划：
-1. 创建 Milestone
-2. 将 Issue 关联到 Milestone
+
+### 创建里程碑
+
+1. 在 Issues 页面点击 **Milestones**
+2. 点击 **New milestone**
+3. 填写标题和描述
+4. 设置截止日期
+5. 点击 **Create milestone**
+
+### 关联 Issue
+
+1. 编辑 Issue
+2. 在右侧选择 **Milestone**
+3. 选择里程碑
+
+```
+┌─────────────────────────────────────┐
+│  Milestone                           │
+│                                     │
+│  ○ No milestone                     │
+│  ○ v1.0 - 首次发布                   │
+│  ● v2.0 - 功能增强  ← 选择这个      │
+│                                     │
+└─────────────────────────────────────┘
+```
 
 ## 关闭 Issue
 
-### 自动关闭
+### 方法一：在 Issue 页面关闭
+
+1. 打开 Issue 页面
+2. 点击底部的 **Close issue** 按钮
+
+### 方法二：使用关键词自动关闭
+
 在提交信息或 PR 描述中使用关键词：
 
 ```bash
@@ -69,13 +237,15 @@ git commit -m "fix: 修复登录问题，closes #42"
 git commit -m "fix: 修复多个问题，fixes #42, fixes #43"
 ```
 
-### 关键词
+**关键词：**
 - `closes #42`
 - `fixes #42`
 - `resolves #42`
 
-### 手动关闭
-在 Issue 页面点击 **Close issue**
+### 方法三：在 PR 中自动关闭
+
+1. 在 PR 描述中输入 `Closes #42`
+2. 合并 PR 时会自动关闭关联的 Issue
 
 ## Issue 最佳实践
 
@@ -85,36 +255,35 @@ git commit -m "fix: 修复多个问题，fixes #42, fixes #43"
 4. **使用标签**：分类管理
 5. **及时回复**：回应评论和问题
 
-## Issue 模板
-
-创建 `.github/ISSUE_TEMPLATE/bug_report.md`：
-
-```markdown
----
-name: Bug Report
-about: 报告一个 bug
-labels: bug
 ---
 
-## 描述
-简要描述问题
+## 实践练习
 
-## 复现步骤
-1. 访问 '...'
-2. 点击 '...'
-3. 看到错误
+### 练习：创建和管理 Issue
 
-## 期望行为
-描述期望的行为
+**任务 1：创建 Issue**
+1. 创建一个仓库（如果没有）
+2. 点击 **Issues** → **New issue**
+3. 标题：`Bug: 测试问题`
+4. 描述：填写问题详情
+5. 添加标签 `bug`
+6. 点击 **Submit new issue**
 
-## 实际行为
-描述实际的行为
+**任务 2：使用模板创建 Issue**
+1. 点击 **New issue**
+2. 选择 Bug Report 模板
+3. 填写模板内容
+4. 提交 Issue
 
-## 环境
-- OS: 
-- Browser: 
-- Version: 
-```
+**任务 3：管理 Issue**
+1. 给 Issue 添加标签
+2. 分配负责人
+3. 关联里程碑
+4. 关闭 Issue
+
+**验证方法：**
+- Issue 列表显示创建的 Issue
+- 标签、指派、里程碑设置正确
 
 ## 下一步
 
