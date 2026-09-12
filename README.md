@@ -8,10 +8,12 @@
 
 - 针对中国开发者优化，包含网络加速方案
 - 全中文文档，零基础友好
-- 85+ 篇详细教程，20 个实战练习
+- 100+ 篇详细教程，30 个实战练习，30 万+ 中文字
 - 涵盖 Git 基础到 GitHub 高级功能
-- 涵盖 DevOps、AI/ML、商业化运营
+- 涵盖 DevOps、AI/ML、云原生、商业化运营
+- 涵盖前端/后端/移动端/微服务各领域
 - 涵盖企业治理、团队协作、认证考试
+- 涵盖开源协议、技术写作、项目案例分析
 - 持续更新，紧跟 GitHub 最新特性
 
 ---
@@ -105,10 +107,26 @@
 
 ### 第九部分：实战案例
 - [项目实战案例](docs/V-practical-examples.md)
+- [大型开源项目管理案例分析](docs/X13-real-world-project-case-studies.md)
 - [双语 README 指南](docs/W6-bilingual-readme.md)
 - [GitHub 教育资源](docs/W-education.md)
 
-### 第十部分：实战练习
+### 第十部分：专题深入
+- [GitHub Copilot 完全指南](docs/X1-github-copilot-complete-guide.md)
+- [GitHub 上的机器学习工作流](docs/X2-ml-workflow-github.md)
+- [前端开发者的 GitHub 工作流](docs/X3-frontend-github-workflow.md)
+- [后端开发者的 GitHub CI/CD 指南](docs/X4-backend-cicd-github.md)
+- [Kubernetes + GitHub Actions 实战](docs/X5-kubernetes-github-actions.md)
+- [Terraform IaC + GitHub 实践](docs/X6-terraform-iac-github.md)
+- [开源协议完全指南](docs/X7-open-source-licenses-guide.md)
+- [GitHub 技术写作指南](docs/X8-technical-writing-github.md)
+- [移动端开发者的 GitHub 指南](docs/X9-mobile-app-github.md)
+- [微服务架构的 GitHub 管理](docs/X10-microservices-github.md)
+- [Git 内部机制深度解析](docs/X11-git-internals-deep-dive.md)
+- [Git 性能优化完全指南](docs/X12-git-performance-optimization.md)
+- [GitHub Copilot Workspace 与 AI Agent](docs/X14-github-copilot-workspace-agents.md)
+
+### 第十一部分：实战练习
 - [练习 1：创建你的第一个仓库](exercises/exercise-1-create-repo.md)
 - [练习 2：分支与合并练习](exercises/exercise-2-branch-merge.md)
 - [练习 3：Pull Request 工作流](exercises/exercise-3-pull-request.md)
@@ -129,6 +147,16 @@
 - [练习 18：GitHub 企业配置实战](exercises/exercise-18-enterprise-setup.md)
 - [练习 19：GitHub Actions 复用工作流](exercises/exercise-19-reusable-workflows.md)
 - [练习 20：GitHub Projects 看板管理](exercises/exercise-20-project-board.md)
+- [练习 21：GitHub Copilot 入门实战](exercises/exercise-21-copilot-basics.md)
+- [练习 22：配置 Dependabot 自动依赖更新](exercises/exercise-22-dependabot-setup.md)
+- [练习 23：使用 GitHub Codespaces 开发](exercises/exercise-23-codespaces-dev.md)
+- [练习 24：创建 Issue 表单和 PR 模板](exercises/exercise-24-issue-forms.md)
+- [练习 25：Git Submodules 实战](exercises/exercise-25-submodules.md)
+- [练习 26：创建可复用 GitHub Actions 工作流](exercises/exercise-26-reusable-workflows.md)
+- [练习 27：使用 GitHub Models 测试 AI 模型](exercises/exercise-27-github-models.md)
+- [练习 28：配置 GitHub 安全扫描](exercises/exercise-28-security-scanning.md)
+- [练习 29：Git LFS 大文件管理实战](exercises/exercise-29-git-lfs-workflow.md)
+- [练习 30：Terraform + GitHub Actions 基础设施自动化](exercises/exercise-30-terraform-github.md)
 
 ### 附录
 - [常用命令速查表](docs/A-common-commands.md)
@@ -193,7 +221,8 @@ git clone https://ghproxy.com/https://github.com/wangzi5151/chinese-use-github-h
 | 第七部分 | 企业与商业化 | 企业用户 |
 | 第八部分 | 中国开发者专区 | 国内用户 |
 | 第九部分 | 实战案例 | 所有用户 |
-| 第十部分 | 实战练习 | 所有用户 |
+| 第十部分 | 专题深入（AI/ML/云原生/前端后端/开源协议等） | 进阶用户 |
+| 第十一部分 | 实战练习 | 所有用户 |
 | 附录 | 速查表和参考 | 所有用户 |
 
 ---
@@ -202,10 +231,11 @@ git clone https://ghproxy.com/https://github.com/wangzi5151/chinese-use-github-h
 
 | 类型 | 数量 |
 |------|------|
-| 教程文档 | 85+ 篇 |
-| 实战练习 | 20 个 |
+| 教程文档 | 108+ 篇 |
+| 实战练习 | 30 个 |
 | 附录文档 | 10 篇 |
-| 总文件数 | 115+ 个 |
+| 中文字数 | 30 万+ |
+| 总文件数 | 138+ 个 |
 
 ---
 
