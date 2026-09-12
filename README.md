@@ -1,24 +1,56 @@
-# Chinese Use GitHub Helper
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║                                                              ║
+ ║     🇨🇳  GitHub 中文完全指南                                    ║
+ ║                                                              ║
+ ║     Git 小白 → GitHub 入门 → Actions 自动化 → 开源贡献        ║
+ ║                                                              ║
+ ║     100+ 篇教程 · 30 个实战练习 · 30 万字 · 完全免费           ║
+ ║                                                              ║
+ ╚══════════════════════════════════════════════════════════════╝
+```
 
-> 中国开发者 GitHub 使用完全指南 - 从零开始全面掌握 GitHub，包含国内加速方案和中文资源
+# 🇨🇳 GitHub 中文完全指南
+
+> 面向中文开发者的 GitHub 完全指南：从 Git/GitHub 入门，到 Actions、AI、DevOps、开源协作，包含 100+ 篇教程与 30 个实战练习。
+
+⭐ **如果这个项目帮助了你，欢迎 [Star](https://github.com/wangzi5151/chinese-use-github-helper) 支持！**
 
 ---
 
-## 为什么选择这个指南？
+## 🚀 你能学到什么？
 
-- 针对中国开发者优化，包含网络加速方案
-- 全中文文档，零基础友好
-- 100+ 篇详细教程，30 个实战练习，30 万+ 中文字
-- 涵盖 Git 基础到 GitHub 高级功能
-- 涵盖 DevOps、AI/ML、云原生、商业化运营
-- 涵盖前端/后端/移动端/微服务各领域
-- 涵盖企业治理、团队协作、认证考试
-- 涵盖开源协议、技术写作、项目案例分析
-- 持续更新，紧跟 GitHub 最新特性
+| 技能领域 | 你将掌握 |
+|----------|----------|
+| **Git 基础** | 版本控制、分支管理、合并冲突、撤销操作 |
+| **GitHub 核心** | 仓库管理、Issue、Pull Request、Code Review |
+| **自动化** | GitHub Actions CI/CD、Docker 部署、自动测试 |
+| **AI / ML** | GitHub Copilot、Models API、机器学习工作流 |
+| **DevOps** | Kubernetes、Terraform、云原生部署 |
+| **开源协作** | Fork 工作流、开源协议、社区运营、技术写作 |
+| **团队协作** | 分支策略、权限管理、企业治理、项目管理 |
+| **中国开发者专区** | 国内加速、镜像配置、国内平台对比 |
 
 ---
 
-## 目录
+## 🎯 新手从这里开始
+
+> 不知道从哪看起？按这 6 步走，从零到会用 GitHub。
+
+| 步骤 | 学什么 | 教程链接 |
+|:----:|--------|----------|
+| 1 | Git 是什么？为什么要用版本控制？ | [开始学习](docs/00-what-is-version-control.md) |
+| 2 | GitHub 是什么？它能做什么？ | [开始学习](docs/01-what-is-github.md) |
+| 3 | 安装 Git 并注册 GitHub 账号 | [开始学习](docs/00-git-installation-guide.md) |
+| 4 | 创建你的第一个仓库 | [开始学习](exercises/exercise-1-create-repo.md) |
+| 5 | 上传你的第一个项目 | [开始学习](docs/08-add-commit.md) |
+| 6 | 学会 Pull Request 协作 | [开始学习](exercises/exercise-3-pull-request.md) |
+
+📘 **需要更完整的学习路线？** → 看 [🎯 新手学习路线图](BEGINNER.md)
+
+---
+
+## 📚 完整教程目录
 
 ### 第一部分：基础准备
 - [什么是 GitHub？](docs/01-what-is-github.md)
@@ -172,25 +204,15 @@
 
 ---
 
-## 快速开始
+## 📖 项目数据
 
-### 中国开发者快速入门
+| 📚 教程 | 🧪 练习 | 📝 中文字数 | 📁 总文件 |
+|:-------:|:-------:|:-----------:|:---------:|
+| 108+ 篇 | 30 个 | 30 万+ | 138+ 个 |
 
-1. [安装 Git（国内镜像）](docs/02-install-git.md#国内镜像)
-2. [配置 GitHub 加速](docs/Q-china-acceleration.md)
-3. [注册 GitHub 账号](docs/03-signup-github.md)
-4. [配置 SSH 密钥](docs/04-ssh-keys.md)
-5. 开始 [实战练习](exercises/exercise-1-create-repo.md)
+---
 
-### 国际用户快速入门
-
-1. 了解 [什么是 GitHub](docs/01-what-is-github.md)
-2. [安装与配置 Git](docs/02-install-git.md)
-3. [注册 GitHub 账号](docs/03-signup-github.md)
-4. [配置 SSH 密钥](docs/04-ssh-keys.md)
-5. 开始 [实战练习](exercises/exercise-1-create-repo.md)
-
-### 快速克隆本仓库
+## 🇨🇳 国内开发者快速开始
 
 ```bash
 # 使用 HTTPS（推荐国内用户）
@@ -206,51 +228,23 @@ gh repo clone wangzi5151/chinese-use-github-helper
 git clone https://ghproxy.com/https://github.com/wangzi5151/chinese-use-github-helper.git
 ```
 
----
-
-## 内容概览
-
-| 部分 | 内容 | 适合人群 |
-|------|------|----------|
-| 第一部分 | 基础准备 | 完全新手 |
-| 第二部分 | Git 核心命令 | 所有用户 |
-| 第三部分 | GitHub 核心功能 | 所有用户 |
-| 第四部分 | 协作与进阶 | 进阶用户 |
-| 第五部分 | GitHub 生态系统 | 所有用户 |
-| 第六部分 | 安全与 DevOps | 团队负责人 |
-| 第七部分 | 企业与商业化 | 企业用户 |
-| 第八部分 | 中国开发者专区 | 国内用户 |
-| 第九部分 | 实战案例 | 所有用户 |
-| 第十部分 | 专题深入（AI/ML/云原生/前端后端/开源协议等） | 进阶用户 |
-| 第十一部分 | 实战练习 | 所有用户 |
-| 附录 | 速查表和参考 | 所有用户 |
+- [国内网络加速方案](docs/Q-china-acceleration.md)
+- [国内直连完全指南](docs/Q2-china-direct-access.md)
 
 ---
 
-## 统计
-
-| 类型 | 数量 |
-|------|------|
-| 教程文档 | 108+ 篇 |
-| 实战练习 | 30 个 |
-| 附录文档 | 10 篇 |
-| 中文字数 | 30 万+ |
-| 总文件数 | 138+ 个 |
-
----
-
-## 贡献
+## 🤝 贡献
 
 欢迎贡献！请查看 [贡献指南](CONTRIBUTING.md) 了解如何参与。
 
-## 许可证
+## 📄 许可证
 
 本项目采用 [MIT 许可证](LICENSE)，欢迎自由使用和分享。
 
-## 反馈
+## 💬 反馈
 
 如果你有任何问题或建议，请在 [Issues](https://github.com/wangzi5151/chinese-use-github-helper/issues) 中提出。
 
-## Star 历史
+---
 
-如果这个项目对你有帮助，欢迎 Star 支持！
+⭐ **如果这个项目对你有帮助，欢迎 Star 支持！**
